@@ -22,7 +22,7 @@ var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
   password : 'pass',
-  database: 'mob'
+  database: 'neversleephungry'
 });
 
 
@@ -38,3 +38,20 @@ app.get('/', function(req,res){
 			
 	})
 });
+
+
+app.post('/feedback', function(req,res){
+	console.log('Calling POST');
+	console.log('Request from form:',req.body);
+	var name=req.body.name;
+	var email=req.body.email;
+	var phone=req.body.phone;
+	var feedback = req.body.feedback;
+	var id=req.body.uid;
+	connection.query('insert into feedback values (?,?,?,?,?);',[id,name,email,phone,feedback],function(err){
+		if(err) console.log("Error occured while inserting the data:",err);
+		res.render('index');
+	})
+});
+
+

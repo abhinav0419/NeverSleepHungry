@@ -100,7 +100,10 @@ p {
 .modal-content {
     background-color: #1d1d1d;
 }
-
+.homeText{
+    position: relative;
+    top:-45px;
+}
 section {
     padding: 70px 0;
 }
