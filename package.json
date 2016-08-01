@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "forever start --minUptime 1000 --spinSleepTime 1000 app.js",
+    "stop": "forever stop app.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "errorhandler": "^1.4.3",
     "express": "^4.14.0",
     "express-session": "^1.14.0",
+    "forever": "^0.15.2",
     "hbs": "^4.0.0",
     "method-override": "^2.3.6",
     "morgan": "^1.7.0",
@@ -30,7 +32,5 @@
     "node": "0.0.0",
     "pug": "^2.0.0-beta4",
     "serve-favicon": "^2.3.0"
-  },
-  "scripts":{"start": "forever start --minUptime 1000 --spinSleepTime 1000 app.js",
-    "stop":  "forever stop app.js"}
+  }
 }
