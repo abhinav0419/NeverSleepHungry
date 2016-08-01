@@ -19,7 +19,7 @@ app.listen(port, function() {
 console.log("Listening on " + port);
 });
 var connection = mysql.createConnection({
-  host     : 'localhost',
+  host     : 'us-cdbr-iron-east-04.cleardb.net',
   user     : 'b4bbb745fe50ca',
   password : '4ab8885cf443ec1',
   database: 'heroku_9a56b070896f883'
