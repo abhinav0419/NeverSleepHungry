@@ -27,6 +27,9 @@
                     <a class="page-scroll" href="#one" style="font-size:15px">Home</a>
                 </li>
                 <li>
+                    <a class="page-scroll" href="#two" style="font-size:15px">What You Get?</a>
+                </li>
+                <li>
                     <a class="page-scroll" href="#three" style="font-size:15px">Events Gallery</a>
                 </li>
                 <li>
@@ -49,11 +52,16 @@
             <h4>THERE ARE PEOPLE SO HUNGRY THAT GOD CANNOT APPEAR TO THEM EXCEPT IN THE FORM OF FOOD</h4>
             <hr>
             <div id="paymentButtons">
-                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Make
-                    Donation</a>
+                <!--<a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Make-->
+                <!--Donation</a>-->
                 <br>
                 <br>
-                <a href="#one" class="btn btn-primary btn-xl page-scroll">Donate a Meal</a>
+                <!--<a href="#one" class="btn btn-primary btn-xl page-scroll">Donate a Meal</a>-->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+                    <input type="image" width="240px" src="http://i1076.photobucket.com/albums/w445/Abhinav_Pandey/Screen%20Shot%202016-07-31%20at%2010.53.35%20PM_zpsibzcpvbh.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                </form>
             </div>
         </div>
     </div>
@@ -61,16 +69,16 @@
     <!--<source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.-->
     <!--</video>-->
 </header>
-<section class="bg-primary" id="one" >
+<section class="bg-primary" id="one">
     <div class="container homeText">
         <div class="row ">
-            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center" style="color: black">
                 <h1 class="margin-top-0 text-primary">Facts About Child Hunger</h1>
                 <br>
-                <p class="text-faded">
-                   According to latest FAO estimates in ‘The State of Food Insecurity in the World, 2015” report,
+                <p class="text-faded" style="color: black">
+                    According to latest FAO estimates in ‘The State of Food Insecurity in the World, 2015” report,
                     194.6 million people are undernourished in India.
-                    <h3 class="margin-top-0 text-primary">Facts about hunger in India</h3>
+                <h3 class="margin-top-0 text-primary">Facts about hunger in India</h3>
                 <ul style="list-style: none">
                     <li>India is home to the largest undernourished and hungry population in the world</li>
                     <li> 15.2% of our population is undernourished</li>
@@ -82,8 +90,8 @@
                     <li> 24% of under-five deaths in India</li>
                     <li> 30% of neo-natal deaths in India</li>
                 </ul>
-                   <h3 class="margin-top-0 text-primary"> Why is the hunger in India so alarming?</h3>
-                    The food grain production is touching new heights every year and we are producing more than
+                <h3 class="margin-top-0 text-primary"> Why is the hunger in India so alarming?</h3>
+                The food grain production is touching new heights every year and we are producing more than
                 sufficient to feed our people without relying on external support. However, sufficient food production
                 is not the only criteria to provide food security in a country and eliminate hunger.
                 Another critical factor that contributes to large scale hunger in India is the
@@ -96,41 +104,22 @@
         </div>
     </div>
 </section>
-<!--<section id="two">-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-lg-12 text-center">-->
-                <!--<h2 class="margin-top-0 text-primary">Flexible Layouts</h2>-->
-                <!--<hr class="primary">-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="container">-->
-        <!--<div class="row">-->
-            <!--<div class="col-lg-4 col-md-4 text-center">-->
-                <!--<div class="feature">-->
-                    <!--<i class="icon-lg ion-android-laptop wow fadeIn" data-wow-delay=".3s"></i>-->
-                    <!--<h3>Responsive</h3>-->
-                    <!--<p class="text-muted">Your site looks good everywhere</p>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-lg-4 col-md-4 text-center">-->
-                <!--<div class="feature">-->
-                    <!--<i class="icon-lg ion-social-sass wow fadeInUp" data-wow-delay=".2s"></i>-->
-                    <!--<h3>Customizable</h3>-->
-                    <!--<p class="text-muted">Easy to theme and customize with SASS</p>-->
-                <!--</div>-->
-            <!--</div>-->
-            <!--<div class="col-lg-4 col-md-4 text-center">-->
-                <!--<div class="feature">-->
-                    <!--<i class="icon-lg ion-ios-star-outline wow fadeIn" data-wow-delay=".3s"></i>-->
-                    <!--<h3>Consistent</h3>-->
-                    <!--<p class="text-muted">A mature, well-tested, stable codebase</p>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</section>-->
+<section id="two" class="rewardImage">
+    <div class="container ">
+        <div class="row homeText">
+            <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center" style="color: black">
+                <h1 class="margin-top-0 text-primary" style="color: yellow">What You Get?</h1>
+                <h2>A BIG SATISFACTION THAT YOU HELPED FOR A CAUSE!</h2>
+                <h2>A FREE NEVERSLEEPHUNGRY EVENT CALENDAR</h2>
+                <ul style="font-size: 20px">
+                    <li>One video at the end of the month showing your money being utilized to provide food to hungry kids out there.</li>
+                    <li>In the Contact US Section provide your email Id and give us the feedback
+                        about your donation and we will give you a free calendar for next event and a video showing how you helped in a social cause.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 <section id="three" class="no-padding">
     <div class="container-fluid">
         <div class="row no-gutter">
@@ -245,12 +234,14 @@
                     </div>
                     <div class="col-md-12">
                         <label></label>
-                        <textarea class="form-control" rows="9" placeholder="Your message here.." id="feedback"></textarea>
+                        <textarea class="form-control" rows="9" placeholder="Your message here.."
+                                  id="feedback"></textarea>
                     </div>
                     <div class="col-md-4 col-md-offset-4">
                         <label></label>
                         <button type="button" data-toggle="modal" data-target="#alertModal" id="feedbackSubmit"
-                                class="btn btn-primary btn-block btn-lg" >Send Feedback<i class="ion-android-arrow-forward"></i>
+                                class="btn btn-primary btn-block btn-lg">Send Feedback<i
+                                class="ion-android-arrow-forward"></i>
                         </button>
                     </div>
                 </form>
@@ -258,46 +249,48 @@
         </div>
     </div>
 </section>
-<footer id="footer">
-    <div class="container-fluid">
-        <div class="row">
-            <!--<div class="col-xs-6 col-sm-3 column">-->
-                <!--<h4>Information</h4>-->
-                <!--<ul class="list-unstyled">-->
-                    <!--<li><a href="">Products</a></li>-->
-                    <!--<li><a href="">Services</a></li>-->
-                    <!--<li><a href="">Benefits</a></li>-->
-                    <!--<li><a href="">Developers</a></li>-->
+<!--<footer id="footer">-->
+    <!--<div class="container-fluid">-->
+        <!--<div class="row">-->
+            <!--&lt;!&ndash;<div class="col-xs-6 col-sm-3 column">&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>Information</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ul class="list-unstyled">&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="">Products</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="">Services</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="">Benefits</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="">Developers</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div class="col-xs-6 col-sm-3 column">&ndash;&gt;-->
+            <!--&lt;!&ndash;<h4>About</h4>&ndash;&gt;-->
+            <!--&lt;!&ndash;<ul class="list-unstyled">&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Contact Us</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Delivery Information</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Privacy Policy</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#">Terms &amp; Conditions</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--<div class="col-xs-12 col-sm-3 text-right">-->
+                <!--<h4 style="float:left">Follow</h4>-->
+                <!--<ul class="list-inline">-->
+                    <!--<li><a rel="nofollow" href="http://twitter.com" target="_blank" title="Twitter"><i-->
+                            <!--class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;-->
+                    <!--</li>-->
+                    <!--<li><a rel="nofollow" href="http://facebook.com" target="_blank" title="Facebook"><i-->
+                            <!--class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>-->
                 <!--</ul>-->
             <!--</div>-->
-            <!--<div class="col-xs-6 col-sm-3 column">-->
-                <!--<h4>About</h4>-->
-                <!--<ul class="list-unstyled">-->
-                    <!--<li><a href="#">Contact Us</a></li>-->
-                    <!--<li><a href="#">Delivery Information</a></li>-->
-                    <!--<li><a href="#">Privacy Policy</a></li>-->
-                    <!--<li><a href="#">Terms &amp; Conditions</a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <div class="col-xs-12 col-sm-3 text-right" >
-                <h4 style="float:left">Follow</h4>
-                <ul class="list-inline">
-                    <li><a rel="nofollow" href="http://twitter.com" target="_blank" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;
-                    </li>
-                    <li><a rel="nofollow" href="http://facebook.com" target="_blank" title="Facebook"><i
-                            class="icon-lg ion-social-facebook-outline"></i></a>&nbsp;</li>
-                </ul>
-            </div>
-        </div>
-        <br/>
-        <span class="pull-right text-muted small">neversleephungry ©2015 Company</span>
-    </div>
-</footer>
+        <!--</div>-->
+        <!--<br/>-->
+        <!--<span class="pull-right text-muted small">neversleephungry ©2015 Company</span>-->
+    <!--</div>-->
+<!--</footer>-->
 <div id="galleryModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
-                <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive" width="1200px"/>
+                <img src="//placehold.it/1200x700/222?text=..." id="galleryImage" class="img-responsive"
+                     width="1200px"/>
                 <p>
                     <br/>
                     <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">Close <i
@@ -314,7 +307,9 @@
                 <h2 class="text-center">NEVER SLEEP HUNGRY</h2>
                 <h5 class="text-center">
                     Skip 1 soda during your next meal , or skip 1 meal in your whole lifetime, 1 meal that is all what
-                    is needed.
+                    is needed. $10 is all what we are asking from you. One meal if you can skip it will not make you
+                    poor but it will
+                    certainly make a kid somewhere happy and help him sleep without a hungry stomach.
                 </h5>
                 <p class="text-justify">
                     One Meal of Your Life Can Bring Happiness to a Kid, dying of Hunger. One Meal from your entire
@@ -335,18 +330,6 @@
                 Currently, we started with a basic necessity of nutritious food and clean water. Our goal is to provide
                 food, adequate clothing, supplies
                 and education to needed communities around the world where these necessities are a luxury.
-                <h2>How It All Started?</h2>
-                Our founder Abhinav Pandey founded this neversleephungry project immediately after his coming to the
-                United States of America. Abhinav came to USA for his education.
-                Being from India when he came to United States of America he was astonished by seeing that there was a
-                huge difference in lifestyle of people and the way they live and when he compared it to many small kids who sleep without food in many countries, He decided to make this a global effort.
-                Abhinav knew there were many organization in India working on poor people but there is no organization
-                providing free food. Small kids sleep without food for days. So Abhinav came up with an initiative to
-                donate one meal of your life and
-                by this he will help the kids not to sleep hungry in the streets. What he is asking for to citizens of
-                these beautiful contries around the world to donate just
-                one meal of your life. Abhinav is asking to skip a soda during your lunch , or skip the whole meal
-                altogether and donate that money for providing food to a child who may be dying of hunger.
                 "2 Million people can be fed each year by the amount of food thrown by a small country like Japan."
                 </p>
                 <br/>
@@ -360,9 +343,11 @@
         <div class="modal-content">
             <div class="modal-body">
                 <h2 class="text-center">Thank You For Your FeedBack</h2>
-                <p class="text-center">Your FeedBack Was Submitted Successfully, someone from the organization will get back to you.</p>
+                <p class="text-center">Your FeedBack Was Submitted Successfully, someone from the organization will get
+                    back to you.</p>
                 <br/>
-                <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true" id="afterFeedBackModal">OK <i
+                <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"
+                        id="afterFeedBackModal">OK <i
                         class="ion-android-close"></i></button>
             </div>
         </div>
