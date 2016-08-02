@@ -5,10 +5,6 @@ var app = express();
 var mysql = require('mysql');
 var forever = require('forever-monitor');
 var bodyParser = require('body-parser');
-process.on('uncaughtException', function (err) {
-	console.error(err);
-	console.log("Node NOT Exiting...");
-});
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('views',__dirname+'/views');
