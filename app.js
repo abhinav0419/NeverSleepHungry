@@ -3,7 +3,12 @@
 var express = require("express");
 var app = express();
 var mysql = require('mysql');
+var forever = require('forever-monitor');
 var bodyParser = require('body-parser');
+process.on('uncaughtException', function (err) {
+	console.error(err);
+	console.log("Node NOT Exiting...");
+});
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 app.set('views',__dirname+'/views');
@@ -40,6 +45,18 @@ app.get('/', function(req,res){
 });
 
 
+
+var child = new (forever.Monitor)('app.js', {
+	max: 3,
+	silent: true,
+	args: []
+});
+
+child.on('exit', function () {
+	console.log('your-filename.js has exited after 3 restarts');
+});
+
+child.start();
 app.post('/feedback', function(req,res){
 	console.log('Calling POST');
 	console.log('Request from form:',req.body);
