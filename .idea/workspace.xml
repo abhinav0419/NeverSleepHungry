@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3e2c078-e14e-4048-89cb-01ddc800bb4e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Meal Charity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -227,12 +227,12 @@
       <workItem from="1470032323653" duration="1436000" />
       <workItem from="1470036084934" duration="593000" />
       <workItem from="1470041124528" duration="1501000" />
-      <workItem from="1470106605209" duration="153000" />
+      <workItem from="1470106605209" duration="254000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31712000" />
+    <option name="totallyTimeSpent" value="31813000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
